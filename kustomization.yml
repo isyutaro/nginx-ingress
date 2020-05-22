@@ -1,0 +1,5 @@
+commonLabels:
+  app: gke-test 
+
+resources:
+- service.yml

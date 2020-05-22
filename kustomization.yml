@@ -1,5 +1,6 @@
 commonLabels:
-  app: gke-test 
+  app: gke-test
 
 resources:
 - service.yml
+- deployment.yml

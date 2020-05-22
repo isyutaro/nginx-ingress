@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gke-test
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      run: gke-test
+  template:
+    metadata:
+      labels:
+        run: gke-test
+    spec:
+      containers:
+      - image: eu.gcr.io/PROJECT_ID/APPLICATION_NAME:TAG
+        imagePullPolicy: IfNotPresent
+        name: web
+        ports:
+        - containerPort: 8000
+          protocol: TCP

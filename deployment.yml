@@ -17,5 +17,5 @@ spec:
         imagePullPolicy: IfNotPresent
         name: gke-test
         ports:
-        - containerPort: 8000
+        - containerPort: 80
           protocol: TCP

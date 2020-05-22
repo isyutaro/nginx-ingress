@@ -13,9 +13,9 @@ spec:
         run: gke-test
     spec:
       containers:
-      - image: eu.gcr.io/PROJECT_ID/APPLICATION_NAME:TAG
+      - image: justo-dev-image
         imagePullPolicy: IfNotPresent
-        name: web
+        name: gke-test
         ports:
         - containerPort: 8000
           protocol: TCP

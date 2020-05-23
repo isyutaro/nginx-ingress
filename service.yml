@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: gke-test
+  name: web-test
   namespace: default
 spec:
   ports:
@@ -10,5 +10,5 @@ spec:
     protocol: TCP
     targetPort: 8000
   selector:
-    run: gke-test
+    run: web-test
   type: NodePort

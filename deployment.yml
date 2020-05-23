@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: gke-test
+  name: web-test
   namespace: default
 spec:
   selector:
     matchLabels:
-      run: gke-test
+      run: web-test
   template:
     metadata:
       labels:
-        run: gke-test
+        run: web-test
     spec:
       containers:
       - image: justo-dev-image
         imagePullPolicy: IfNotPresent
-        name: gke-test
+        name: web-test
         ports:
         - containerPort: 8000
           protocol: TCP

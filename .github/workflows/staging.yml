@@ -8,10 +8,10 @@
 #
 # 3. Change the values for the GKE_ZONE, GKE_CLUSTER, IMAGE, REGISTRY_HOSTNAME and DEPLOYMENT_NAME environment variables (below).
 
-name: Build and Deploy to GKE
+name: Build Staging
 
 on:
-  pull_request:
+  push:
     branches: [ master ]
 
 # Environment variables available to all jobs and steps in this workflow

@@ -12,7 +12,7 @@ name: Build and Deploy to GKE
 
 on:
   pull_request:
-    branches: [ web-* ]
+    branches: [ master ]
 
 # Environment variables available to all jobs and steps in this workflow
 env:
